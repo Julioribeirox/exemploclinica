@@ -232,6 +232,14 @@ main {
     border-color: var(--secondary-color);
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 /* =========================================
    Page Headers (About, Services, Contact)
    ========================================= */
@@ -554,13 +562,15 @@ footer {
         right: -100%;
         top: 0;
         flex-direction: column;
-        background-color: var(--white);
+        background-color: #ffffff; /* Forçando cor sólida */
         width: 70%;
         height: 100%;
         padding-top: 80px;
         text-align: center;
         transition: 0.3s;
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+        opacity: 1;
     }
 
     .nav-links.active {
@@ -569,6 +579,16 @@ footer {
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
     }
 
     .about-content {
