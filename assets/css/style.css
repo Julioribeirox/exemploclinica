@@ -134,6 +134,7 @@ main {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     box-shadow: none;
+    transition: background-color 0s !important; /* Remove delay na mudança de cor */
 }
 
 .nav-container {
