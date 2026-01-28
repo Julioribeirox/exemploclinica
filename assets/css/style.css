@@ -128,6 +128,14 @@ main {
     padding: 15px 0;
 }
 
+/* Garante navbar sólida quando menu aberto */
+.navbar.menu-open {
+    background-color: var(--white) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;

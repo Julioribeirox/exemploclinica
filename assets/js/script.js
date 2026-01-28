@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
+        navbar.classList.toggle('menu-open'); // Adiciona classe para controlar estilo da navbar
         
         // Bloqueia ou libera o scroll do body
         if (navLinks.classList.contains('active')) {
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
+            navbar.classList.remove('menu-open');
             document.body.style.overflow = ''; // Libera o scroll ao clicar
         });
     });
