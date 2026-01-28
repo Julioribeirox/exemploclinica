@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar Scroll Effect
+    
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', () => {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle
+    
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navLinksItems = document.querySelectorAll('.nav-links a');
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        navbar.classList.toggle('menu-open'); // Adiciona classe para controlar estilo da navbar
+        navbar.classList.toggle('menu-open'); 
         
-        // Bloqueia ou libera o scroll do body
+        
         if (navLinks.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -28,29 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close mobile menu when clicking a link
+    
     navLinksItems.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
             navbar.classList.remove('menu-open');
-            document.body.style.overflow = ''; // Libera o scroll ao clicar
+            document.body.style.overflow = ''; 
         });
     });
 
-    // Scroll Reveal Animation
+    
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Only animate once
+                observer.unobserve(entry.target); 
             }
         });
     }, {
         root: null,
-        threshold: 0.15, // Trigger when 15% of the element is visible
+        threshold: 0.15, 
         rootMargin: "0px 0px -50px 0px"
     });
 

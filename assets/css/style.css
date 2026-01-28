@@ -1,9 +1,7 @@
-/* =========================================
-   Variables & Reset
-   ========================================= */
+
 :root {
-    --primary-color: #004d40; /* Azul Petróleo Profundo */
-    --secondary-color: #d4af37; /* Dourado Suave */
+    --primary-color: #004d40; 
+    --secondary-color: #d4af37; 
     --text-color: #333333;
     --light-bg: #f4f7f6;
     --white: #ffffff;
@@ -49,9 +47,7 @@ img {
     display: block;
 }
 
-/* =========================================
-   Layout & Utilities
-   ========================================= */
+
 body {
     display: flex;
     flex-direction: column;
@@ -59,7 +55,7 @@ body {
 
 main {
     flex: 1;
-    margin-top: 80px; /* Offset for fixed navbar */
+    margin-top: 80px; 
 }
 
 .container {
@@ -95,9 +91,9 @@ main {
 }
 
 .btn-outline {
-    background-color: var(--secondary-color); /* Mudei de transparent para a cor dourada */
+    background-color: var(--secondary-color); 
     border: 2px solid var(--secondary-color);
-    color: var(--white); /* Texto branco para dar contraste */
+    color: var(--white); 
 }
 
 .btn-outline:hover {
@@ -105,9 +101,7 @@ main {
     color: var(--secondary-color);
 }
 
-/* =========================================
-   Navbar Glassmorphism
-   ========================================= */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -116,8 +110,8 @@ main {
     z-index: 1000;
     transition: var(--transition);
     padding: 20px 0;
-    background-color: var(--white); /* Adicione isso para ele ter fundo desde o início */
-    box-shadow: var(--shadow); /* Opcional: uma sombra leve para separar do texto */
+    background-color: var(--white); 
+    box-shadow: var(--shadow); 
 }
 
 .navbar.scrolled {
@@ -128,13 +122,13 @@ main {
     padding: 15px 0;
 }
 
-/* Garante navbar sólida quando menu aberto */
+
 .navbar.menu-open {
     background-color: var(--white) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     box-shadow: none;
-    transition: background-color 0s !important; /* Remove delay na mudança de cor */
+    transition: background-color 0s !important; 
 }
 
 .nav-container {
@@ -195,12 +189,10 @@ main {
     transition: var(--transition);
 }
 
-/* =========================================
-   Hero Section
-   ========================================= */
+
 
 .hero {
-    min-height: 100vh; /* Garante que preencha a tela, mas cresça se necessário */
+    min-height: 100vh; 
     background: linear-gradient(rgba(0, 77, 64, 0.8), rgba(0, 77, 64, 0.6)), 
                 url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') 
                 no-repeat center center/cover;
@@ -210,9 +202,9 @@ main {
     text-align: center;
     color: var(--white);
     
-    /* CORREÇÕES AQUI: */
-    margin-top: 0;         /* REMOVA o -80px que estava aqui */
-    padding-top: 100px;    /* Cria o espaço interno para o texto descer e sair debaixo do menu */
+    
+    margin-top: 0;         
+    padding-top: 100px;    
     padding-bottom: 50px;
 }
 
@@ -245,22 +237,20 @@ main {
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaço entre os botões */
+    gap: 20px; 
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
-/* =========================================
-   Page Headers (About, Services, Contact)
-   ========================================= */
+
 .page-header {
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Garante que h1 e p fiquem um embaixo do outro */
+    flex-direction: column; 
     color: var(--white);
-    padding-top: 150px; /* Aumentado para compensar navbar */
+    padding-top: 150px; 
     padding-bottom: 50px;
     background-size: cover;
     background-position: center;
@@ -270,13 +260,13 @@ main {
 
 .page-header h1 {
     color: var(--white);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Sombra para contraste forte */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); 
     margin-bottom: 10px;
     font-size: 3rem;
 }
 
 .page-header p {
-    color: var(--secondary-color); /* Dourado para o subtítulo */
+    color: var(--secondary-color); 
     font-weight: 600;
     text-shadow: 0 1px 4px rgba(0,0,0,0.5);
     font-size: 1.2rem;
@@ -294,9 +284,7 @@ main {
     background-image: linear-gradient(rgba(0, 77, 64, 0.9), rgba(0, 77, 64, 0.7)), url('https://images.unsplash.com/photo-1516574187841-693083f05b83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
 }
 
-/* =========================================
-   Features / Services Preview
-   ========================================= */
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -325,9 +313,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* =========================================
-   About Section
-   ========================================= */
+
 .about-content {
     display: flex;
     align-items: center;
@@ -345,9 +331,7 @@ main {
     flex: 1;
 }
 
-/* =========================================
-   About Page - Team Section
-   ========================================= */
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -384,9 +368,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   Services Page
-   ========================================= */
+
 .service-item {
     display: flex;
     margin-bottom: 60px;
@@ -413,9 +395,7 @@ main {
     flex: 1;
 }
 
-/* =========================================
-   Contact Page
-   ========================================= */
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -469,9 +449,7 @@ main {
     outline: none;
 }
 
-/* =========================================
-   Footer
-   ========================================= */
+
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -506,9 +484,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   Scroll Reveal Animation
-   ========================================= */
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -520,9 +496,7 @@ footer {
     transform: translateY(0);
 }
 
-/* =========================================
-   WhatsApp Float
-   ========================================= */
+
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -546,13 +520,11 @@ footer {
     background-color: #128c7e;
 }
 
-/* =========================================
-   Responsive
-   ========================================= */
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        z-index: 2001; /* Garante que fique acima do menu (z-index 2000) */
+        z-index: 2001; 
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -572,7 +544,7 @@ footer {
         right: -100%;
         top: 0;
         flex-direction: column;
-        background-color: #ffffff !important; /* Cor sólida forçada */
+        background-color: #ffffff !important; 
         width: 70%;
         height: 100%;
         padding-top: 80px;
