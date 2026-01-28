@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Exemplo Clinic</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Exemplo <span>Clinic</span></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html" class="active">Contato</a></li>
+                <li><a href="contact.html" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">Agendar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header header-contact">
+        <div class="container text-center reveal">
+            <h1>Fale Conosco</h1>
+            <p>Estamos prontos para atender você</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <div class="contact-wrapper">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h4 class="text-gold">INFORMAÇÕES</h4>
+                    <h2 style="margin-bottom: 30px;">Entre em Contato</h2>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5>Endereço</h5>
+                            <p>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h5>Telefone</h5>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h5>Email</h5>
+                            <p>contato@exemploclinic.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h5>Horário de Atendimento</h5>
+                            <p>Seg - Sex: 08:00 - 20:00<br>Sáb: 08:00 - 14:00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Maps Embed Placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197586021626!2d-46.65420068502216!3d-23.56394988468165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="reveal">
+                    <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: var(--shadow);">
+                        <h2 style="margin-bottom: 30px;">Envie uma Mensagem</h2>
+                        <form class="contact-form">
+                            <div>
+                                <label>Nome Completo</label>
+                                <input type="text" placeholder="Seu nome">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" placeholder="Seu email">
+                            </div>
+                            <div>
+                                <label>Telefone</label>
+                                <input type="tel" placeholder="(00) 00000-0000">
+                            </div>
+                            <div>
+                                <label>Assunto</label>
+                                <select>
+                                    <option>Agendamento de Consulta</option>
+                                    <option>Dúvidas sobre Serviços</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Mensagem</label>
+                                <textarea rows="5" placeholder="Como podemos ajudar?"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%; border: none;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Exemplo <span>Clinic</span></h3>
+                    <p style="margin-top: 20px; opacity: 0.8;">Transformando vidas através de um cuidado médico excepcional e personalizado.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="services.html">Serviços</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@exemploclinic.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div style="font-size: 1.5rem; display: flex; gap: 15px; margin-top: 10px;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Exemplo Clinic. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
