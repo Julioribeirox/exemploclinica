@@ -18,6 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
+        
+        // Bloqueia ou libera o scroll do body
+        if (navLinks.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
 
     // Close mobile menu when clicking a link
@@ -25,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
+            document.body.style.overflow = ''; // Libera o scroll ao clicar
         });
     });
 
